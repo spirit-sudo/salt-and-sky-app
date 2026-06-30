@@ -1,3 +1,4 @@
+import ImageBlock from "@/components/ImageBlock";
 import SignupForm from "@/components/SignupForm";
 
 export default function ContactPage() {
@@ -14,6 +15,8 @@ export default function ContactPage() {
           </p>
         </div>
       </section>
+
+      <ImageBlock className="h-56 w-full sm:h-72" />
 
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-12 md:grid-cols-2">
@@ -72,6 +75,7 @@ export default function ContactPage() {
                 <a href="#" className="hover:text-amber-500">YouTube</a>
               </div>
             </div>
+            <ImageBlock className="aspect-video w-full rounded-xl" />
           </div>
         </div>
       </section>

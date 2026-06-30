@@ -1,3 +1,4 @@
+import ImageBlock from "@/components/ImageBlock";
 import SignupForm from "@/components/SignupForm";
 
 const schedule = [
@@ -23,6 +24,8 @@ export default function SchedulePage() {
           </p>
         </div>
       </section>
+
+      <ImageBlock className="h-56 w-full sm:h-72" />
 
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-12 lg:grid-cols-[1.5fr_1fr]">
