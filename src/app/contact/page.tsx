@@ -1,5 +1,21 @@
+import type { Metadata } from "next";
 import ImageBlock from "@/components/ImageBlock";
 import SignupForm from "@/components/SignupForm";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description:
+    "Get in touch with Linear Progression CrossFit coaching — questions about programs, pricing, or scheduling? Send a message to Coach Daimino Stewart.",
+  alternates: {
+    canonical: "/contact",
+  },
+  openGraph: {
+    url: "/contact",
+    title: "Contact | Linear Progression",
+    description:
+      "Get in touch with Linear Progression CrossFit coaching — questions about programs, pricing, or scheduling? Send a message to Coach Daimino Stewart.",
+  },
+};
 
 export default function ContactPage() {
   return (

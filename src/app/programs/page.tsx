@@ -1,4 +1,20 @@
+import type { Metadata } from "next";
 import ImageBlock from "@/components/ImageBlock";
+
+export const metadata: Metadata = {
+  title: "Programs & Pricing",
+  description:
+    "Remote CrossFit programming with Coach Daimino Stewart — periodized class programming for gym owners ($99/mo) and competition prep for athletes chasing the Open, Quarterfinals, and Regionals ($59/mo).",
+  alternates: {
+    canonical: "/programs",
+  },
+  openGraph: {
+    url: "/programs",
+    title: "Programs & Pricing | Linear Progression",
+    description:
+      "Remote CrossFit programming with Coach Daimino Stewart — periodized class programming for gym owners and competition prep for athletes chasing the Open, Quarterfinals, and Regionals.",
+  },
+};
 
 const plans = [
   {

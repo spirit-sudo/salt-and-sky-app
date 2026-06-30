@@ -1,5 +1,21 @@
+import type { Metadata } from "next";
 import ImageBlock from "@/components/ImageBlock";
 import SignupForm from "@/components/SignupForm";
+
+export const metadata: Metadata = {
+  title: "Events & Competitions",
+  description:
+    "Upcoming Linear Progression CrossFit competitions, including the Fortius Summer Games in San Diego — Rx, Masters, and Intermediate divisions with cash and gift prizes.",
+  alternates: {
+    canonical: "/competitions",
+  },
+  openGraph: {
+    url: "/competitions",
+    title: "Events & Competitions | Linear Progression",
+    description:
+      "Upcoming Linear Progression CrossFit competitions, including the Fortius Summer Games in San Diego — Rx, Masters, and Intermediate divisions with cash and gift prizes.",
+  },
+};
 
 export default function EventsPage() {
   return (
