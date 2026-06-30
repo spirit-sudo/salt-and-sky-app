@@ -107,7 +107,7 @@ export default function Home() {
               src="/coach-daimino.jpg"
               alt="Coach Daimino Stewart"
               fill
-              className="object-cover"
+              className="object-cover object-top"
             />
           </div>
           <div>
