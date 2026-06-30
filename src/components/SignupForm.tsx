@@ -6,20 +6,20 @@ export default function SignupForm({
   fields = ["name", "email", "phone"],
   submitLabel = "Submit",
   extraField,
+  successMessage = "Thanks for reaching out — we'll be in touch soon.",
 }: {
   fields?: ("name" | "email" | "phone")[];
   submitLabel?: string;
   extraField?: { name: string; label: string; placeholder?: string };
+  successMessage?: string;
 }) {
   const [submitted, setSubmitted] = useState(false);
 
   if (submitted) {
     return (
       <div className="rounded-lg border border-amber-400/60 bg-amber-50 p-6 text-center">
-        <p className="font-bold text-slate-900">You&apos;re in!</p>
-        <p className="mt-1 text-sm text-slate-600">
-          Thanks for signing up — we&apos;ll be in touch soon.
-        </p>
+        <p className="font-bold text-slate-900">Got it!</p>
+        <p className="mt-1 text-sm text-slate-600">{successMessage}</p>
       </div>
     );
   }

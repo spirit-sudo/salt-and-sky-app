@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const siteUrl = "https://salt-and-sky-app--bradhylton.replit.app";
+const siteUrl = "https://wild-moon-ranch--bradhylton.replit.app";
 
 export default function robots(): MetadataRoute.Robots {
   return {

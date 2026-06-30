@@ -1,9 +1,9 @@
 import type { MetadataRoute } from "next";
 
-const siteUrl = "https://salt-and-sky-app--bradhylton.replit.app";
+const siteUrl = "https://wild-moon-ranch--bradhylton.replit.app";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const routes = ["", "/programs", "/competitions", "/contact"];
+  const routes = ["", "/the-cabin", "/julian-ca", "/contact"];
 
   return routes.map((route) => ({
     url: `${siteUrl}${route}`,

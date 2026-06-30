@@ -16,14 +16,13 @@ export default function Icon() {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          background: "#0f172a",
+          background: "#1c1917",
           color: "#fbbf24",
           fontSize: 18,
           fontWeight: 800,
-          fontStyle: "italic",
         }}
       >
-        LP
+        WM
       </div>
     ),
     { ...size }
