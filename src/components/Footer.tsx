@@ -18,20 +18,18 @@ export default function Footer() {
           <div className="flex flex-col gap-2 text-sm">
             <span className="font-semibold text-slate-100">Site</span>
             <Link href="/programs" className="text-slate-400 hover:text-amber-400">Programs & Pricing</Link>
-            <Link href="/schedule" className="text-slate-400 hover:text-amber-400">Schedule</Link>
-            <Link href="/competitions" className="text-slate-400 hover:text-amber-400">Competitions</Link>
-            <Link href="/video-lessons" className="text-slate-400 hover:text-amber-400">Video Lessons</Link>
+            <Link href="/competitions" className="text-slate-400 hover:text-amber-400">Events</Link>
+            <Link href="/contact" className="text-slate-400 hover:text-amber-400">Contact</Link>
           </div>
 
           <div className="flex flex-col gap-2 text-sm">
             <span className="font-semibold text-slate-100">Contact</span>
-            <a href="mailto:coach@linearprogression.fit" className="text-slate-400 hover:text-amber-400">
-              coach@linearprogression.fit
+            <a
+              href="https://www.instagram.com/lp_strength_/"
+              className="text-slate-400 hover:text-amber-400"
+            >
+              Follow @lp_strength_ on Instagram
             </a>
-            <a href="tel:+15555555555" className="text-slate-400 hover:text-amber-400">
-              (555) 555-5555
-            </a>
-            <span className="text-slate-400">123 Iron Way, Your City</span>
           </div>
         </div>
 

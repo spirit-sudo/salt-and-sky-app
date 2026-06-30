@@ -2,41 +2,28 @@ import ImageBlock from "@/components/ImageBlock";
 
 const plans = [
   {
-    name: "Group Classes",
-    price: "$150",
+    name: "Programming for Gym Owners",
+    price: "$99",
     period: "/mo",
-    blurb: "Unlimited coached group WODs. Best for athletes who love training in a community setting.",
+    blurb: "Designed for busy gym owners who want solid, periodized programming without writing it themselves.",
     features: [
-      "Unlimited group classes",
-      "Programmed daily WODs",
-      "Form & technique coaching",
-      "Access to the community board",
-    ],
-  },
-  {
-    name: "1-on-1 Programming",
-    price: "$250",
-    period: "/mo",
-    blurb: "Fully custom strength & conditioning programming, built around your goals and equipment.",
-    features: [
-      "Custom weekly programming",
-      "Video form checks",
-      "Direct coach messaging",
-      "Monthly progress check-ins",
+      "7 sessions/week",
+      "4-week program themes with progressive focus",
+      "Full scaling, L1 through Rx",
+      "Up to 250 athletes can log and track free",
     ],
     featured: true,
+    cta: "Start My 7-Day Free Trial",
+    href: "https://marketplace.trainheroic.com/workout-plan/team/strength-conditioning-linear-progression?attrib=35906-lt",
   },
   {
     name: "Competition Prep",
-    price: "$300",
+    price: "$59",
     period: "/mo",
-    blurb: "Periodized training for athletes prepping for the Open, Quarterfinals, or local throwdowns.",
-    features: [
-      "Everything in 1-on-1 Programming",
-      "Peaking & taper strategy",
-      "Competition-day game plan",
-      "Priority scheduling",
-    ],
+    blurb: "For athletes training to compete — Open, Quarterfinals, or Regionals. Coached by someone who's been there six times.",
+    features: [],
+    cta: "Apply Now",
+    href: "https://marketplace.trainheroic.com/workout-plan/team/linearprogressioncf?attrib=35906-lt",
   },
 ];
 
@@ -49,14 +36,14 @@ export default function ProgramsPage() {
             Programs &amp; Pricing
           </h1>
           <p className="mt-4 max-w-xl text-slate-300">
-            Whether you want the energy of group classes or fully custom
-            programming, there&apos;s a path built for where you are.
+            Two ways to train with Coach Daimino — remote programming built
+            for gym owners and competitors.
           </p>
         </div>
       </section>
 
       <section className="mx-auto max-w-6xl px-6 py-16">
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2">
           {plans.map((plan) => (
             <div
               key={plan.name}
@@ -83,10 +70,10 @@ export default function ProgramsPage() {
                 ))}
               </ul>
               <a
-                href="/contact"
+                href={plan.href}
                 className="mt-8 rounded-full bg-amber-400 px-6 py-3 text-center font-bold uppercase tracking-wide text-slate-900 transition hover:bg-amber-300"
               >
-                Get Started
+                {plan.cta}
               </a>
             </div>
           ))}

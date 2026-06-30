@@ -6,9 +6,7 @@ import { useState } from "react";
 const links = [
   { href: "/", label: "Home" },
   { href: "/programs", label: "Programs & Pricing" },
-  { href: "/schedule", label: "Schedule" },
-  { href: "/competitions", label: "Competitions" },
-  { href: "/video-lessons", label: "Video Lessons" },
+  { href: "/competitions", label: "Events" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -40,10 +38,10 @@ export default function Navbar() {
         </nav>
 
         <Link
-          href="/schedule"
+          href="https://marketplace.trainheroic.com/workout-plan/team/strength-conditioning-linear-progression?attrib=35906-lt"
           className="hidden rounded-full bg-amber-400 px-5 py-2 text-sm font-bold uppercase tracking-wide text-slate-900 transition hover:bg-amber-300 md:inline-block"
         >
-          Book a Class
+          Start Free Trial
         </Link>
 
         <button
