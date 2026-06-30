@@ -64,7 +64,12 @@ export default function TheCabinPage() {
         </div>
       </section>
 
-      <ImageBlock className="h-56 w-full sm:h-72" />
+      <ImageBlock
+        className="h-56 w-full sm:h-72"
+        src="/photos/kitchen-vaulted-ceiling.jpg"
+        alt="Kitchen at Wild Moon Ranch with vaulted wood ceiling"
+        priority
+      />
 
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-12 md:grid-cols-2">
@@ -87,7 +92,11 @@ export default function TheCabinPage() {
               stargazing.
             </p>
           </div>
-          <ImageBlock className="aspect-video w-full rounded-xl" />
+          <ImageBlock
+            className="aspect-video w-full rounded-xl"
+            src="/photos/bedroom-vaulted-ceiling.jpg"
+            alt="Bedroom at Wild Moon Ranch with vaulted wood ceiling"
+          />
         </div>
 
         <div className="mt-16 grid gap-10 sm:grid-cols-3">
@@ -126,7 +135,11 @@ export default function TheCabinPage() {
               Check Availability
             </Link>
           </div>
-          <ImageBlock className="aspect-video w-full rounded-xl" />
+          <ImageBlock
+            className="aspect-video w-full rounded-xl"
+            src="/photos/double-vanity.jpg"
+            alt="Bathroom vanity with dual hammered-metal vessel sinks"
+          />
         </div>
       </section>
     </div>

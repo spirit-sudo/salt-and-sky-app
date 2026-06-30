@@ -35,11 +35,20 @@ export const metadata: Metadata = {
     siteName,
     title: "Wild Moon Ranch | Julian, CA Vacation Rental",
     description: defaultDescription,
+    images: [
+      {
+        url: "/photos/entryway-mountain-view.jpg",
+        width: 1200,
+        height: 800,
+        alt: "Wild Moon Ranch entryway with mountain views",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Wild Moon Ranch | Julian, CA Vacation Rental",
     description: defaultDescription,
+    images: ["/photos/entryway-mountain-view.jpg"],
   },
 };
 

@@ -32,7 +32,12 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <ImageBlock className="h-56 w-full sm:h-72" />
+      <ImageBlock
+        className="h-56 w-full sm:h-72"
+        src="/photos/coffee-bar.jpg"
+        alt="Coffee bar at Wild Moon Ranch with espresso machine and open shelving"
+        priority
+      />
 
       <section className="mx-auto max-w-6xl px-6 py-16">
         <div className="grid gap-12 md:grid-cols-2">
@@ -94,7 +99,11 @@ export default function ContactPage() {
                 <a href="#" className="hover:text-amber-500">Facebook</a>
               </div>
             </div>
-            <ImageBlock className="aspect-video w-full rounded-xl" />
+            <ImageBlock
+              className="aspect-video w-full rounded-xl"
+              src="/photos/theater-room-popcorn.jpg"
+              alt="Media room with popcorn machine at Wild Moon Ranch"
+            />
           </div>
         </div>
       </section>

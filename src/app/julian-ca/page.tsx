@@ -94,7 +94,12 @@ export default function JulianGuidePage() {
         </div>
       </section>
 
-      <ImageBlock className="h-48 w-full sm:h-64" />
+      <ImageBlock
+        className="h-48 w-full sm:h-64"
+        src="/photos/bookshelf-vinyl.jpg"
+        alt="Built-in shelving with books and records at Wild Moon Ranch"
+        priority
+      />
 
       <section className="mx-auto max-w-6xl px-6 py-16">
         <h2 className="text-2xl font-extrabold tracking-tight text-stone-900">

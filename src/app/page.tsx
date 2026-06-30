@@ -56,7 +56,12 @@ export default function Home() {
       {/* Hero */}
       <section className="relative overflow-hidden bg-stone-900">
         <div className="absolute inset-0 opacity-30">
-          <ImageBlock className="h-full w-full" />
+          <ImageBlock
+            className="h-full w-full"
+            src="/photos/entryway-mountain-view.jpg"
+            alt="Entryway at Wild Moon Ranch with mountain views through the open door"
+            priority
+          />
         </div>
         <div className="relative mx-auto flex max-w-6xl flex-col items-start gap-6 px-6 py-24 sm:py-32">
           <span className="rounded-full bg-amber-400 px-4 py-1 text-xs font-bold uppercase tracking-wide text-stone-900">
@@ -113,7 +118,11 @@ export default function Home() {
       <section className="bg-stone-100">
         <div className="mx-auto max-w-6xl px-6 py-20">
           <div className="grid gap-12 md:grid-cols-2 md:items-center">
-            <ImageBlock className="aspect-video w-full rounded-xl" />
+            <ImageBlock
+              className="aspect-video w-full rounded-xl"
+              src="/photos/kitchen-wide.jpg"
+              alt="Full kitchen at Wild Moon Ranch with wood cabinets and stainless range"
+            />
             <div>
               <h2 className="text-3xl font-extrabold tracking-tight text-stone-900 sm:text-4xl">
                 Everything You Need. Nothing You Don&apos;t.
@@ -143,10 +152,26 @@ export default function Home() {
           A Look Inside
         </h2>
         <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-4">
-          <ImageBlock className="aspect-square rounded-xl" />
-          <ImageBlock className="aspect-square rounded-xl" />
-          <ImageBlock className="aspect-square rounded-xl" />
-          <ImageBlock className="aspect-square rounded-xl" />
+          <ImageBlock
+            className="aspect-square rounded-xl"
+            src="/photos/primary-bedroom-horse-art.jpg"
+            alt="Primary bedroom at Wild Moon Ranch with four-poster bed"
+          />
+          <ImageBlock
+            className="aspect-square rounded-xl"
+            src="/photos/bathroom-soaking-tub.jpg"
+            alt="Primary bathroom with dual vessel sinks and soaking tub"
+          />
+          <ImageBlock
+            className="aspect-square rounded-xl"
+            src="/photos/lounge-howdy-cowboy.jpg"
+            alt="Lounge area with leather sofa and Southwestern decor"
+          />
+          <ImageBlock
+            className="aspect-square rounded-xl"
+            src="/photos/bunk-room.jpg"
+            alt="Bunk room with built-in beds and Southwestern textiles"
+          />
         </div>
       </section>
 
