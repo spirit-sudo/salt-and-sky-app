@@ -17,9 +17,9 @@ export default function SignupForm({
 
   if (submitted) {
     return (
-      <div className="rounded-lg border border-amber-400/60 bg-amber-50 p-6 text-center">
-        <p className="font-bold text-slate-900">Got it!</p>
-        <p className="mt-1 text-sm text-slate-600">{successMessage}</p>
+      <div className="border border-teal/30 bg-teal/5 p-6 text-center">
+        <p className="font-display text-lg text-navy">Message received.</p>
+        <p className="mt-1 text-sm text-navy/60">{successMessage}</p>
       </div>
     );
   }
@@ -30,61 +30,61 @@ export default function SignupForm({
         e.preventDefault();
         setSubmitted(true);
       }}
-      className="flex flex-col gap-4"
+      className="flex flex-col gap-5"
     >
       {fields.includes("name") && (
         <div>
-          <label className="mb-1 block text-sm font-medium text-slate-700">
+          <label className="block text-xs uppercase tracking-[0.12em] text-navy/50 mb-2">
             Full Name
           </label>
           <input
             required
             type="text"
             placeholder="Jane Doe"
-            className="w-full rounded-md border border-slate-300 bg-white px-4 py-2 text-slate-900 outline-none focus:border-amber-400"
+            className="w-full border-b border-navy/20 bg-transparent pb-2 text-navy placeholder:text-navy/30 outline-none focus:border-teal transition-colors"
           />
         </div>
       )}
       {fields.includes("email") && (
         <div>
-          <label className="mb-1 block text-sm font-medium text-slate-700">
+          <label className="block text-xs uppercase tracking-[0.12em] text-navy/50 mb-2">
             Email
           </label>
           <input
             required
             type="email"
             placeholder="jane@email.com"
-            className="w-full rounded-md border border-slate-300 bg-white px-4 py-2 text-slate-900 outline-none focus:border-amber-400"
+            className="w-full border-b border-navy/20 bg-transparent pb-2 text-navy placeholder:text-navy/30 outline-none focus:border-teal transition-colors"
           />
         </div>
       )}
       {fields.includes("phone") && (
         <div>
-          <label className="mb-1 block text-sm font-medium text-slate-700">
+          <label className="block text-xs uppercase tracking-[0.12em] text-navy/50 mb-2">
             Phone
           </label>
           <input
             type="tel"
             placeholder="(555) 555-5555"
-            className="w-full rounded-md border border-slate-300 bg-white px-4 py-2 text-slate-900 outline-none focus:border-amber-400"
+            className="w-full border-b border-navy/20 bg-transparent pb-2 text-navy placeholder:text-navy/30 outline-none focus:border-teal transition-colors"
           />
         </div>
       )}
       {extraField && (
         <div>
-          <label className="mb-1 block text-sm font-medium text-slate-700">
+          <label className="block text-xs uppercase tracking-[0.12em] text-navy/50 mb-2">
             {extraField.label}
           </label>
           <textarea
             placeholder={extraField.placeholder}
             rows={3}
-            className="w-full rounded-md border border-slate-300 bg-white px-4 py-2 text-slate-900 outline-none focus:border-amber-400"
+            className="w-full border-b border-navy/20 bg-transparent pb-2 text-navy placeholder:text-navy/30 outline-none focus:border-teal transition-colors resize-none"
           />
         </div>
       )}
       <button
         type="submit"
-        className="mt-2 rounded-full bg-amber-400 px-6 py-3 font-bold uppercase tracking-wide text-slate-900 transition hover:bg-amber-300"
+        className="mt-2 bg-teal text-white text-xs uppercase tracking-[0.15em] px-8 py-4 hover:bg-teal-dark transition-colors self-start"
       >
         {submitLabel}
       </button>

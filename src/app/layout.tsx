@@ -1,17 +1,20 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
+  variable: "--font-inter",
   subsets: ["latin"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const cormorant = Cormorant_Garamond({
+  variable: "--font-cormorant",
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
+  display: "swap",
 });
 
 const siteUrl = "https://wild-moon-ranch--bradhylton.replit.app";
@@ -26,9 +29,7 @@ export const metadata: Metadata = {
     template: `%s | ${siteName}`,
   },
   description: defaultDescription,
-  alternates: {
-    canonical: "/",
-  },
+  alternates: { canonical: "/" },
   openGraph: {
     type: "website",
     url: "/",
@@ -52,9 +53,6 @@ export const metadata: Metadata = {
   },
 };
 
-// LodgingBusiness schema grounds the entity for Google, AI Overviews, and
-// assistants like ChatGPT/Perplexity so they can correctly cite the rental
-// as a real, bookable place tied to Julian, CA (AEO/GEO entity signal).
 const lodgingBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LodgingBusiness",
@@ -80,9 +78,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${inter.variable} ${cormorant.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-white text-slate-900">
+      <body className="min-h-full flex flex-col bg-white text-navy">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(lodgingBusinessSchema) }}
