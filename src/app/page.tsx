@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import ImageBlock from "@/components/ImageBlock";
 
@@ -101,7 +102,14 @@ export default function Home() {
       {/* About coach */}
       <section className="mx-auto max-w-6xl px-6 py-20">
         <div className="grid gap-12 md:grid-cols-2 md:items-center">
-          <ImageBlock className="aspect-square w-full rounded-xl" />
+          <div className="relative aspect-square w-full overflow-hidden rounded-xl">
+            <Image
+              src="/coach-daimino.jpg"
+              alt="Coach Daimino Stewart"
+              fill
+              className="object-cover"
+            />
+          </div>
           <div>
             <h2 className="text-3xl font-extrabold uppercase tracking-tight text-slate-900">
               Coach Daimino Stewart
