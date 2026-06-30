@@ -14,10 +14,42 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://salt-and-sky-app--bradhylton.replit.app";
+const siteName = "Linear Progression";
+const defaultDescription =
+  "Linear Progression CrossFit coaching — group classes, 1-on-1 programming, competition prep, and video lessons.";
+
 export const metadata: Metadata = {
-  title: "Linear Progression | CrossFit Coaching",
-  description:
-    "Linear Progression CrossFit coaching — group classes, 1-on-1 programming, competition prep, and video lessons.",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Linear Progression | CrossFit Coaching",
+    template: `%s | ${siteName}`,
+  },
+  description: defaultDescription,
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    url: "/",
+    siteName,
+    title: "Linear Progression | CrossFit Coaching",
+    description: defaultDescription,
+    images: [
+      {
+        url: "/coach-daimino.jpg",
+        width: 1200,
+        height: 1200,
+        alt: "Coach Daimino Stewart, Linear Progression CrossFit coaching",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Linear Progression | CrossFit Coaching",
+    description: defaultDescription,
+    images: ["/coach-daimino.jpg"],
+  },
 };
 
 export default function RootLayout({
